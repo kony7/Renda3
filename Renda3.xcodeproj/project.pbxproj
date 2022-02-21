@@ -16,6 +16,8 @@
 		EE50AE6327C31CA000FB1538 /* Renda3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50AE6227C31CA000FB1538 /* Renda3Tests.swift */; };
 		EE50AE6D27C31CA100FB1538 /* Renda3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50AE6C27C31CA100FB1538 /* Renda3UITests.swift */; };
 		EE50AE6F27C31CA100FB1538 /* Renda3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50AE6E27C31CA100FB1538 /* Renda3UITestsLaunchTests.swift */; };
+		EE50AE7D27C3204700FB1538 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EE50AE7C27C3204700FB1538 /* FirebaseFirestore */; };
+		EE50AE7F27C320B800FB1538 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE50AE7E27C320B700FB1538 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		EE50AE6827C31CA100FB1538 /* Renda3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Renda3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE50AE6C27C31CA100FB1538 /* Renda3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renda3UITests.swift; sourceTree = "<group>"; };
 		EE50AE6E27C31CA100FB1538 /* Renda3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renda3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE50AE7E27C320B700FB1538 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE50AE7D27C3204700FB1538 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				EE50AE5427C31CA000FB1538 /* Assets.xcassets */,
 				EE50AE5627C31CA000FB1538 /* LaunchScreen.storyboard */,
 				EE50AE5927C31CA000FB1538 /* Info.plist */,
+				EE50AE7E27C320B700FB1538 /* GoogleService-Info.plist */,
 			);
 			path = Renda3;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Renda3;
+			packageProductDependencies = (
+				EE50AE7C27C3204700FB1538 /* FirebaseFirestore */,
+			);
 			productName = Renda3;
 			productReference = EE50AE4827C31C9E00FB1538 /* Renda3.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = EE50AE3F27C31C9E00FB1538;
+			packageReferences = (
+				EE50AE7B27C3204700FB1538 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EE50AE4927C31C9E00FB1538 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE50AE5827C31CA000FB1538 /* LaunchScreen.storyboard in Resources */,
+				EE50AE7F27C320B800FB1538 /* GoogleService-Info.plist in Resources */,
 				EE50AE5527C31CA000FB1538 /* Assets.xcassets in Resources */,
 				EE50AE5327C31C9E00FB1538 /* Main.storyboard in Resources */,
 			);
@@ -604,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE50AE7B27C3204700FB1538 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE50AE7C27C3204700FB1538 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE50AE7B27C3204700FB1538 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE50AE4027C31C9E00FB1538 /* Project object */;
 }
